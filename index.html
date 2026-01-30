@@ -191,7 +191,89 @@
             </div>
         </div>
     </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 
+    <script>
+        // --- QUAN TRỌNG: DÁN LINK GOOGLE SHEETS CỦA BẠN VÀO DƯỚI ĐÂY ---
+        const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSK050jLo3KMlgRVdQyyGHP9-HG3BaAiqASrB9I6rTQlqUvdOCAMtR1V8l4C1kvPjDAENgl8tGmRO_8/pubhtml"; 
+        
+        // Hàm chạy khi web tải xong
+        window.onload = function() {
+            // Kiểm tra xem đã thay link chưa
+            if(sheetURL.includes("DÁN_LINK")) {
+                console.log("Chưa dán link Google Sheet!");
+                return;
+            }
+            
+            // Đọc dữ liệu từ Google Sheets
+            Papa.parse(sheetURL, {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    renderWeb(results.data);
+                }
+            });
+        };
+
+        // Hàm hiển thị dữ liệu lên web
+        function renderWeb(data) {
+            const productContainer = document.getElementById('product-list'); 
+            const newsContainer = document.querySelector('.article-content');
+            
+            // Nếu chưa có chỗ hiện sản phẩm thì dừng lại
+            if (!productContainer) return;
+            
+            // Xóa nội dung cũ
+            productContainer.innerHTML = '';
+            let newsHTML = '';
+
+            data.forEach(item => {
+                // Lấy thông tin (chấp nhận cả chữ hoa/thường)
+                let ten = item.Ten || item.ten;
+                let gia = item.Gia || item.gia;
+                let anh = item.Anh || item.anh;
+                let mota = item.MoTa || item.mota;
+                let loai = item.Loai || item.loai;
+
+                if (!ten) return; // Bỏ qua dòng trống
+
+                // 1. HIỂN THỊ SẢN PHẨM (Nếu cột Loại là SP)
+                if(loai && loai.trim().toUpperCase() === 'SP') {
+                    const html = `
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="${anh}" alt="${ten}" onerror="this.src='https://via.placeholder.com/300?text=VPP+Tinh'">
+                            </div>
+                            <div class="card-body">
+                                <h3>${ten}</h3>
+                                <p style="font-size: 0.9em; color: #666;">${mota}</p>
+                                <div class="price">${gia}</div>
+                                <a href="https://zalo.me/0931736266" target="_blank" class="btn">Thỉnh ngay</a>
+                            </div>
+                        </div>
+                    `;
+                    productContainer.innerHTML += html;
+                }
+                
+                // 2. HIỂN THỊ BÀI VIẾT (Nếu cột Loại là TIN)
+                if(loai && loai.trim().toUpperCase() === 'TIN') {
+                    newsHTML = `
+                        <h3 style="text-align: center; color: #d32f2f; margin-bottom: 25px; font-size: 1.5em;">${ten}</h3>
+                        <p>${mota}</p>
+                        <div style="text-align:center; margin-top:20px;">
+                            ${anh ? `<img src="${anh}" style="max-width:100%; border-radius:8px;">` : ''}
+                        </div>
+                        <p style="text-align: center; font-style: italic; color: #555; margin-top: 30px;">(Tin mới cập nhật)</p>
+                    `;
+                }
+            });
+
+            // Cập nhật bài viết nếu có tin mới
+            if(newsHTML && newsContainer) {
+                newsContainer.innerHTML = newsHTML;
+            }
+        }
+    </script>
     <footer>
         <div class="container">
             <p><strong>Văn Phòng Phẩm Tịnh (Oanh177) © 2026</strong></p>
