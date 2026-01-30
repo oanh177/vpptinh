@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Văn Phòng Phẩm Tinh - Oanh177</title>
+    
+    <title>Văn Phòng Phẩm Tịnh - Sổ Chép Kinh & Bút Mài | Oanh177</title>
+    <meta name="description" content="Văn Phòng Phẩm Tịnh (Oanh177) chuyên cung cấp Sổ tay chép kinh, bút mài luyện chữ đẹp, giấy in và các vật phẩm trợ duyên tu tập. Bình yên trao tay.">
+    <meta name="keywords" content="sổ chép kinh, bút mài thầy ánh, văn phòng phẩm tịnh, oanh177, pháp thoại, tịnh radio, chép kinh địa tạng">
+    <meta name="author" content="Oanh177">
+    
+    <meta property="og:title" content="Văn Phòng Phẩm Tịnh - Bình Yên Trao Tay">
+    <meta property="og:description" content="Nơi cung cấp Sổ chép kinh, Bút mài và Góc Tịnh Radio nuôi dưỡng tâm hồn.">
+    <meta property="og:image" content="https://vpptinh.com/logo-k-nen.jpg">
+    <meta property="og:url" content="https://vpptinh.com/">
+    <meta property="og:type" content="website">
+
     <link rel="icon" type="image/jpg" href="logo-k-nen.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Văn Phòng Phẩm Tịnh",
+      "image": "https://vpptinh.com/logo-k-nen.jpg",
+      "description": "Chuyên cung cấp vật phẩm trợ duyên, sổ chép kinh và văn phòng phẩm.",
+      "telephone": "0931736266",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "VN"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
     <style>
         /* --- CÀI ĐẶT GIAO DIỆN CHUNG --- */
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #fdfbf7; color: #5d4037; line-height: 1.6; }
@@ -12,120 +40,152 @@
         .container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
         
         /* HEADER & LOGO */
-        header { background: #5d4037; color: #fff; padding: 30px 0; text-align: center; border-bottom: 5px solid #eebb4d; }
-        .logo-img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #eebb4d; object-fit: cover; margin-bottom: 10px; animation: pulse 3s infinite; }
-        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(238, 187, 77, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(238, 187, 77, 0); } 100% { box-shadow: 0 0 0 0 rgba(238, 187, 77, 0); } }
-        header h1 { margin: 10px 0 5px; font-size: 2em; color: #eebb4d; text-transform: uppercase; letter-spacing: 1px; }
-        header p { font-style: italic; font-size: 1em; opacity: 0.9; font-weight: 300; }
+        header { background: #5d4037; color: #fff; padding: 30px 0; text-align: center; border-bottom: 5px solid #eebb4d; background-image: linear-gradient(to bottom, #5d4037, #4e342e); }
+        .logo-img { width: 130px; height: 130px; border-radius: 50%; border: 4px solid #eebb4d; object-fit: cover; margin-bottom: 15px; animation: pulse 3s infinite; box-shadow: 0 0 20px rgba(238, 187, 77, 0.5); }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(238, 187, 77, 0.4); } 70% { box-shadow: 0 0 0 20px rgba(238, 187, 77, 0); } 100% { box-shadow: 0 0 0 0 rgba(238, 187, 77, 0); } }
+        header h1 { margin: 5px 0; font-size: 2.2em; color: #eebb4d; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        header p { font-style: italic; font-size: 1.1em; opacity: 0.95; font-weight: 300; letter-spacing: 1px; }
 
         /* MENU ĐIỀU HƯỚNG */
-        nav { background: #4e342e; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        nav { background: #3e2723; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
         nav ul { padding: 0; list-style: none; display: flex; justify-content: center; margin: 0; flex-wrap: wrap; }
-        nav li a { display: block; padding: 15px 25px; color: #fff; font-weight: bold; text-transform: uppercase; font-size: 0.9em; }
-        nav li a:hover { background: #eebb4d; color: #4e342e; }
+        nav li a { display: block; padding: 15px 20px; color: #eebb4d; font-weight: bold; text-transform: uppercase; font-size: 0.95em; border-bottom: 3px solid transparent; }
+        nav li a:hover { background: #5d4037; color: #fff; border-bottom: 3px solid #eebb4d; }
 
         /* PHẦN NỘI DUNG */
-        section { padding: 50px 0; border-bottom: 1px solid #eee; }
-        h2 { text-align: center; color: #5d4037; font-size: 1.8em; margin-bottom: 40px; position: relative; display: inline-block; left: 50%; transform: translateX(-50%); }
-        h2::after { content: ""; display: block; width: 60px; height: 3px; background: #eebb4d; margin: 10px auto 0; }
-        .center-wrap { text-align: center; }
+        section { padding: 60px 0; border-bottom: 1px solid #eee; }
+        h2 { text-align: center; color: #5d4037; font-size: 2em; margin-bottom: 40px; position: relative; display: inline-block; left: 50%; transform: translateX(-50%); text-transform: uppercase; }
+        h2::after { content: ""; display: block; width: 80px; height: 4px; background: #eebb4d; margin: 15px auto 0; border-radius: 2px; }
+        
+        /* BÀI VIẾT (GÓC CHIA SẺ) */
+        .article-content { max-width: 800px; margin: 0 auto; text-align: justify; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-left: 5px solid #eebb4d; }
+        .article-content p { margin-bottom: 15px; font-size: 1.05em; }
 
         /* VIDEO YOUTUBE */
-        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 900px; margin: 0 auto; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border: 1px solid #ddd; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 900px; margin: 0 auto; border-radius: 12px; box-shadow: 0 15px 30px rgba(0,0,0,0.2); border: 2px solid #fff; }
         .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
         /* LƯỚI SẢN PHẨM */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-top: 30px; }
-        .card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s; display: flex; flex-direction: column; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
-        .card-img-top { width: 100%; height: 200px; background-color: #f9f9f9; display: flex; align-items: center; justify-content: center; color: #999; font-size: 3em; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; margin-top: 30px; }
+        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eee; display: flex; flex-direction: column; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); border-color: #eebb4d; }
+        
+        /* Chỗ này để ảnh sản phẩm - Hiện tại dùng màu nền */
+        .card-img-top { width: 100%; height: 220px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 4em; position: relative; }
         .card img { width: 100%; height: 100%; object-fit: cover; }
-        .card-body { padding: 20px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
-        .card h3 { margin: 0 0 10px; font-size: 1.1em; color: #333; }
-        .price { color: #d32f2f; font-weight: bold; font-size: 1.2em; margin-bottom: 15px; }
-        .btn { background: #eebb4d; color: #4e342e; padding: 10px 20px; border-radius: 25px; display: inline-block; font-weight: bold; text-transform: uppercase; border: 2px solid #eebb4d; }
-        .btn:hover { background: transparent; color: #eebb4d; }
+        
+        .card-body { padding: 25px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .card h3 { margin: 0 0 10px; font-size: 1.2em; color: #4e342e; font-weight: 700; }
+        .price { color: #d32f2f; font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
+        .btn { background: #eebb4d; color: #4e342e; padding: 12px 25px; border-radius: 50px; display: inline-block; font-weight: bold; text-transform: uppercase; border: 2px solid #eebb4d; transition: all 0.3s; }
+        .btn:hover { background: #fff; color: #d32f2f; border-color: #d32f2f; }
 
-        /* FOOTER & LIÊN HỆ */
-        .contact-box { background: #fff; padding: 30px; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); max-width: 600px; margin: 0 auto; }
-        .contact-btn { display: inline-block; background: #0068ff; color: white; padding: 12px 30px; border-radius: 50px; font-weight: bold; margin-top: 15px; font-size: 1.1em; box-shadow: 0 4px 10px rgba(0,104,255,0.3); }
+        /* LIÊN HỆ & FOOTER */
+        .contact-box { background: #fff; padding: 40px; border-radius: 15px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); max-width: 600px; margin: 0 auto; border-top: 5px solid #0068ff; }
+        .contact-btn { display: inline-flex; align-items: center; background: #0068ff; color: white; padding: 15px 40px; border-radius: 50px; font-weight: bold; margin-top: 20px; font-size: 1.2em; box-shadow: 0 4px 15px rgba(0,104,255,0.4); text-decoration: none; }
         .contact-btn:hover { background: #0056d6; transform: scale(1.05); }
-        footer { background: #3e2723; color: #aaa; text-align: center; padding: 30px 0; font-size: 0.9em; margin-top: 0; }
+        footer { background: #3e2723; color: #ccc; text-align: center; padding: 40px 0; font-size: 0.95em; margin-top: 0; border-top: 5px solid #eebb4d; }
     </style>
 </head>
 <body>
 
     <header>
         <div class="container">
-            <img src="logo-k-nen.jpg" alt="Logo VPP Tinh" class="logo-img">
-            <h1>VĂN PHÒNG PHẨM TINH</h1>
-            <p>"Nương tựa pháp Phật - Phụng sự điều tử tế"</p>
+            <img src="logo-k-nen.jpg" alt="Logo Văn Phòng Phẩm Tịnh" class="logo-img">
+            <h1>VĂN PHÒNG PHẨM TỊNH</h1>
+            <p>"Bình Yên Trao Tay"</p>
         </div>
     </header>
 
     <nav>
         <ul>
             <li><a href="#">Trang Chủ</a></li>
-            <li><a href="#tinh-radio">Góc Tinh Radio</a></li>
+            <li><a href="#bai-viet">Góc Chia Sẻ</a></li>
+            <li><a href="#tinh-radio">Tịnh Radio</a></li>
             <li><a href="#cua-tiem">Cửa Tiệm</a></li>
             <li><a href="#lien-he">Liên Hệ</a></li>
         </ul>
     </nav>
 
-    <section id="tinh-radio">
+    <section id="bai-viet">
+        <div class="container">
+            <h2>Góc Chia Sẻ</h2>
+            <div class="article-content">
+                <h3 style="text-align: center; color: #d32f2f; margin-bottom: 25px; font-size: 1.5em;">Lợi ích vi diệu của việc chép kinh</h3>
+                <p>Kính chào quý đạo hữu,</p>
+                <p>Giữa bộn bề lo toan của cuộc sống hiện đại, việc tĩnh tâm ngồi xuống biên chép từng dòng kinh điển không chỉ là cách để ghi nhớ lời Phật dạy, mà còn là phương pháp tu tập giúp <strong>định tâm, rèn luyện sự kiên nhẫn</strong> và khai mở trí tuệ.</p>
+                <p>Mỗi nét bút hạ xuống là một lần tâm ta quay về nương tựa nơi Tam Bảo, gieo trồng phước đức cho tự thân và hồi hướng cho gia đạo bình an.</p>
+                <p>Tại <strong>Văn Phòng Phẩm Tịnh</strong>, chúng mình gửi gắm tâm ý "Bình Yên Trao Tay" qua từng cuốn sổ chép kinh chất lượng giấy tốt, những cây bút mài thanh đậm nhẹ nhàng, giúp hành trình tu tập của bạn thêm phần hỷ lạc.</p>
+                <p style="text-align: center; font-style: italic; color: #555; margin-top: 30px;">"Phụng sự chúng sanh là cúng dường chư Phật."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tinh-radio" style="background-color: #f5f0e6;">
         <div class="container center-wrap">
-            <h2>Góc Tinh Radio</h2>
-            <p style="margin-bottom: 30px; font-size: 1.1em;">
-                Những bài pháp thoại, kinh sách nói giúp nuôi dưỡng tâm hồn.<br>
-                (Tự động cập nhật video mới nhất từ kênh YouTube)
+            <h2>Góc Tịnh Radio</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1em; text-align: center;">
+                Pháp thoại và Kinh sách nói mới nhất (Tự động cập nhật).
             </p>
             <div class="video-wrapper">
                 <iframe 
                     src="https://www.youtube.com/embed/videoseries?list=PLyiP_PpfpwjF0hns2j5olqo2HJ_r0pPAy" 
-                    title="Góc Tinh Radio Playlist" 
+                    title="Góc Tịnh Radio Playlist" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
             </div>
-            <div style="margin-top: 20px;">
-                <a href="https://www.youtube.com/@TinhRadio" target="_blank" style="color: #d32f2f; font-weight: bold;">➡️ Xem thêm tại kênh Youtube: Tịnh Radio</a>
+            <div style="margin-top: 25px; text-align: center;">
+                <a href="https://www.youtube.com/@TinhRadio" target="_blank" class="btn" style="background: #ff0000; color: white; border: none;">▶ Đăng ký kênh Tịnh Radio</a>
             </div>
         </div>
     </section>
 
-    <section id="cua-tiem" style="background-color: #fff;">
+    <section id="cua-tiem">
         <div class="container">
             <h2>Vật Phẩm Trợ Duyên</h2>
             <div class="grid">
                 <div class="card">
-                    <div class="card-img-top"><img src="https://via.placeholder.com/300x200?text=So+Chep+Kinh" alt="Sổ chép kinh"></div>
+                    <div class="card-img-top">
+                        <img src="https://via.placeholder.com/300x220?text=So+Chep+Kinh" alt="Sổ Tay Chép Kinh Địa Tạng">
+                    </div>
                     <div class="card-body">
                         <h3>Sổ Tay Chép Kinh</h3>
+                        <p style="font-size: 0.9em; color: #666;">Giấy dày, không lem mực</p>
                         <div class="price">Liên hệ</div>
                         <a href="https://zalo.me/0931736266" target="_blank" class="btn">Thỉnh ngay</a>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-img-top"><img src="https://via.placeholder.com/300x200?text=But+May" alt="Bút Máy"></div>
+                    <div class="card-img-top">
+                        <img src="https://via.placeholder.com/300x220?text=But+Mai" alt="Bút Mài Thầy Ánh">
+                    </div>
                     <div class="card-body">
-                        <h3>Bút Luyện Chữ Đẹp</h3>
+                        <h3>Bút Mài Luyện Chữ</h3>
+                        <p style="font-size: 0.9em; color: #666;">Ngòi mài thanh đậm</p>
                         <div class="price">Liên hệ</div>
                         <a href="https://zalo.me/0931736266" target="_blank" class="btn">Thỉnh ngay</a>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-img-top"><img src="https://via.placeholder.com/300x200?text=Giay+In" alt="Giấy In"></div>
+                    <div class="card-img-top">
+                        <img src="https://via.placeholder.com/300x220?text=Giay+In" alt="Giấy In Văn Phòng">
+                    </div>
                     <div class="card-body">
-                        <h3>Giấy In / Văn Phòng Phẩm</h3>
+                        <h3>Giấy In / VPP</h3>
+                        <p style="font-size: 0.9em; color: #666;">Giấy Double A, Thiên Long...</p>
                         <div class="price">Liên hệ</div>
                         <a href="https://zalo.me/0931736266" target="_blank" class="btn">Mua ngay</a>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-img-top"><img src="https://via.placeholder.com/300x200?text=Muc+But" alt="Mực"></div>
+                    <div class="card-img-top">
+                        <img src="https://via.placeholder.com/300x220?text=Muc+But" alt="Mực Bút Máy">
+                    </div>
                     <div class="card-body">
                         <h3>Mực & Phụ Kiện</h3>
+                        <p style="font-size: 0.9em; color: #666;">Mực Pelikan, Hero...</p>
                         <div class="price">Liên hệ</div>
                         <a href="https://zalo.me/0931736266" target="_blank" class="btn">Mua ngay</a>
                     </div>
@@ -134,29 +194,30 @@
         </div>
     </section>
 
-    <section id="lien-he">
+    <section id="lien-he" style="background-color: #fff;">
         <div class="container">
             <h2>Kết Nối Với Oanh177</h2>
             <div class="contact-box">
-                <p>Bạn cần tư vấn về Sổ chép kinh, bút máy hay văn phòng phẩm?</p>
-                <p>Hãy nhắn tin qua Zalo để được hỗ trợ nhanh nhất nhé!</p>
+                <p style="font-size: 1.2em;">Bạn cần tư vấn về Sổ chép kinh, bút mài hay văn phòng phẩm?</p>
+                <p>Hãy nhắn tin qua Zalo để được mình hỗ trợ nhanh nhất nhé!</p>
                 
                 <a href="https://zalo.me/0931736266" target="_blank" class="contact-btn">
                     Chat Zalo: 0931 736 266
                 </a>
                 
-                <p style="margin-top: 20px; font-size: 0.9em; color: #666;">
-                    Email: (Đang cập nhật)<br>
-                    Địa chỉ: (Đang cập nhật)
-                </p>
+                <div style="margin-top: 30px; font-size: 0.95em; color: #666; border-top: 1px solid #eee; padding-top: 20px;">
+                    <p><strong>Văn Phòng Phẩm Tịnh</strong></p>
+                    <p>📧 Email: (Đang cập nhật)</p>
+                    <p>📍 Địa chỉ: (Đang cập nhật)</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>Văn Phòng Phẩm Tinh (Oanh177) © 2024</p>
-            <p>Nguyện đem công đức này, hướng về khắp tất cả đệ tử và chúng sanh, đều trọn thành Phật đạo.</p>
+            <p><strong>Văn Phòng Phẩm Tịnh (Oanh177) © 2026</strong></p>
+            <p style="font-style: italic; margin-top: 10px;">"Nguyện đem công đức này, hướng về khắp tất cả đệ tử và chúng sanh, đều trọn thành Phật đạo."</p>
         </div>
     </footer>
 
