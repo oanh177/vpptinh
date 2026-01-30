@@ -142,57 +142,35 @@
         </div>
     </section>
 
-    <section id="cua-tiem">
+<section id="cua-tiem">
         <div class="container">
             <h2>Vật Phẩm Trợ Duyên</h2>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-img-top">
-                        <img src="https://via.placeholder.com/300x220?text=So+Chep+Kinh" alt="Sổ Tay Chép Kinh Địa Tạng">
-                    </div>
-                    <div class="card-body">
-                        <h3>Sổ Tay Chép Kinh</h3>
-                        <p style="font-size: 0.9em; color: #666;">Giấy dày, không lem mực</p>
-                        <div class="price">Liên hệ</div>
-                        <a href="https://zalo.me/0931736266" target="_blank" class="btn">Thỉnh ngay</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-top">
-                        <img src="https://via.placeholder.com/300x220?text=But+Mai" alt="Bút Mài Thầy Ánh">
-                    </div>
-                    <div class="card-body">
-                        <h3>Bút Mài Luyện Chữ</h3>
-                        <p style="font-size: 0.9em; color: #666;">Ngòi mài thanh đậm</p>
-                        <div class="price">Liên hệ</div>
-                        <a href="https://zalo.me/0931736266" target="_blank" class="btn">Thỉnh ngay</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-top">
-                        <img src="https://via.placeholder.com/300x220?text=Giay+In" alt="Giấy In Văn Phòng">
-                    </div>
-                    <div class="card-body">
-                        <h3>Giấy In / VPP</h3>
-                        <p style="font-size: 0.9em; color: #666;">Giấy Double A, Thiên Long...</p>
-                        <div class="price">Liên hệ</div>
-                        <a href="https://zalo.me/0931736266" target="_blank" class="btn">Mua ngay</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-top">
-                        <img src="https://via.placeholder.com/300x220?text=Muc+But" alt="Mực Bút Máy">
-                    </div>
-                    <div class="card-body">
-                        <h3>Mực & Phụ Kiện</h3>
-                        <p style="font-size: 0.9em; color: #666;">Mực Pelikan, Hero...</p>
-                        <div class="price">Liên hệ</div>
-                        <a href="https://zalo.me/0931736266" target="_blank" class="btn">Mua ngay</a>
-                    </div>
-                </div>
-            </div>
+            <div class="grid" id="product-list"></div>
         </div>
     </section>
+
+    <script src="data.js"></script>
+    <script>
+        // Code tự động tạo giao diện từ dữ liệu
+        const productContainer = document.getElementById('product-list');
+        
+        products.forEach(product => {
+            const html = `
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="${product.img}" alt="${product.name}">
+                    </div>
+                    <div class="card-body">
+                        <h3>${product.name}</h3>
+                        <p style="font-size: 0.9em; color: #666;">${product.desc}</p>
+                        <div class="price">${product.price}</div>
+                        <a href="${product.link}" target="_blank" class="btn">Thỉnh ngay</a>
+                    </div>
+                </div>
+            `;
+            productContainer.innerHTML += html;
+        });
+    </script>
 
     <section id="lien-he" style="background-color: #fff;">
         <div class="container">
