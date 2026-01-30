@@ -235,6 +235,12 @@
                 let mota = item.MoTa || item.mota;
                 let loai = item.Loai || item.loai;
 
+                // --- THÊM ĐOẠN NÀY ĐỂ SỬA LỖI XUỐNG DÒNG ---
+                if (mota) {
+                    mota = mota.replace(/\n/g, '<br>');
+                }
+                // -------------------------------------------
+
                 if (!ten) return; // Bỏ qua dòng trống
 
                 // 1. HIỂN THỊ SẢN PHẨM (Nếu cột Loại là SP)
