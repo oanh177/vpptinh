@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn Phòng Phẩm Tinh - Oanh177</title>
+    <style>
+        /* CÀI ĐẶT GIAO DIỆN */
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #fdfbf7; color: #5d4037; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
+        
+        /* HEADER */
+        header { background: #5d4037; color: #fff; padding: 20px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 1.8em; color: #eebb4d; }
+        header p { font-style: italic; font-size: 0.9em; margin-top: 5px; opacity: 0.9; }
+
+        /* MENU */
+        nav { background: #4e342e; border-bottom: 3px solid #eebb4d; position: sticky; top: 0; }
+        nav ul { padding: 0; list-style: none; display: flex; justify-content: center; margin: 0; }
+        nav li a { display: block; padding: 15px 20px; color: #fff; font-weight: bold; }
+        nav li a:hover { background: #eebb4d; color: #4e342e; }
+
+        /* PHẦN CHÍNH */
+        section { padding: 40px 0; border-bottom: 1px solid #ddd; }
+        h2 { text-align: center; color: #5d4037; border-left: 5px solid #eebb4d; display: inline-block; padding-left: 10px; margin-bottom: 30px; }
+        .center-wrap { text-align: center; }
+
+        /* LƯỚI SẢN PHẨM */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px; }
+        .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 150px; object-fit: contain; margin-bottom: 10px; }
+        .price { color: #d32f2f; font-weight: bold; margin: 10px 0; }
+        .btn { background: #eebb4d; color: #333; padding: 8px 15px; border-radius: 4px; display: block; font-weight: bold; }
+        
+        /* VIDEO */
+        .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto; background: #000; }
+        .video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+        /* FOOTER */
+        footer { background: #333; color: #ccc; text-align: center; padding: 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>VPP TINH - OANH177</h1>
+            <p>"Nương tựa pháp Phật - Phụng sự điều tử tế"</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#phat-phap">Góc Tinh Radio</a></li>
+            <li><a href="#san-pham">Cửa Tiệm</a></li>
+            <li><a href="https://zalo.me/YOUR_PHONE" target="_blank">Liên Hệ</a></li>
+        </ul>
+    </nav>
+
+    <section id="phat-phap">
+        <div class="container center-wrap">
+            <h2>Góc Tinh Radio</h2>
+            <p style="margin-bottom: 20px;">Mời bạn nghe pháp thoại mới nhất để tâm bình an</p>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="san-pham">
+        <div class="container">
+            <div class="center-wrap"><h2>Vật Phẩm Trợ Duyên</h2></div>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200?text=So+Kinh" alt="Sổ chép kinh">
+                    <h3>Sổ Tay Chép Kinh</h3>
+                    <div class="price">45.000đ</div>
+                    <a href="https://zalo.me/YOUR_PHONE" class="btn">Thỉnh ngay</a>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200?text=But+May" alt="Bút máy">
+                    <h3>Bút Luyện Chữ Đẹp</h3>
+                    <div class="price">85.000đ</div>
+                    <a href="https://zalo.me/YOUR_PHONE" class="btn">Thỉnh ngay</a>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200?text=Giay+A4" alt="Giấy A4">
+                    <h3>Giấy in A4 Double A</h3>
+                    <div class="price">65.000đ</div>
+                    <a href="https://zalo.me/YOUR_PHONE" class="btn">Mua ngay</a>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200?text=Muc" alt="Mực">
+                    <h3>Mực Bút Máy</h3>
+                    <div class="price">25.000đ</div>
+                    <a href="https://zalo.me/YOUR_PHONE" class="btn">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Văn Phòng Phẩm Tinh (Oanh177)</p>
+        <p>Nguyện đem công đức này, hướng về khắp tất cả.</p>
+    </footer>
+
+</body>
+</html>
